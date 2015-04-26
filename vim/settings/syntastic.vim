@@ -8,4 +8,8 @@ let g:syntastic_auto_jump=0
 "show the error list automatically
 let g:syntastic_auto_loc_list=0
 "don't care about warnings
-let g:syntastic_quiet_messages = {'level': 'warnings'}
+"let g:syntastic_quiet_messages = {'level': 'warnings'}
+"replace error arrow into X
+let g:syntastic_error_symbol = "✗"
+"replace warning symbol with box
+let g:syntastic_warning_symbol = "⚠"
