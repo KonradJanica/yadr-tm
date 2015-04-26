@@ -13,3 +13,5 @@ let g:syntastic_auto_loc_list=0
 let g:syntastic_error_symbol = "✗"
 "replace warning symbol with box
 let g:syntastic_warning_symbol = "⚠"
+"automatically load errors into the location list
+let g:syntastic_always_populate_loc_list = 1
