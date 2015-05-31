@@ -30,37 +30,30 @@ export LIBGL_USE_WGL=1
 
 # Use fish as default shell if it exists
 if [ -d "~/.config/fish" ]; then
-  echo "Making fish default shell"
-  echo "fish" >> .bashrc
   echo "Patching config.fish ..."
   cd ~/.config/fish
   echo "
   # Copy working directory
-  if [ -e /dev/clipboard ]; then
-    alias pbcopy='cat >/dev/clipboard'
-    alias pbpaste='cat /dev/clipboard'
-  fi
+  alias pbcopy 'cat >/dev/clipboard'
+  alias pbpaste 'cat /dev/clipboard'
 
-  alias cpwd=\"pwd | tr -d '\n' | pbcopy\"
+  alias cpwd \"pwd | tr -d '\n' | pbcopy\"
 
   # Go shortcuts
-  alias gointerview=\"cd /cygdrive/c/aPrograming/interview/\"
-  alias gocg=\"cd /cygdrive/c/aPrograming/svn/a1194898/2015/s1/cg/assignment2/\"
-  alias gocna=\"cd /cygdrive/c/aPrograming/svn/a1194898/2015/s1/cna/AlternatingBit\"
-  alias gopro=\"cd /cygdrive/c/aPrograming/\"
+  alias gointerview \"cd /cygdrive/c/aPrograming/interview/\"
+  alias gocg        \"cd /cygdrive/c/aPrograming/svn/a1194898/2015/s1/cg/assignment2/\"
+  alias gocna       \"cd /cygdrive/c/aPrograming/svn/a1194898/2015/s1/cna/AlternatingBit\"
+  alias gopro       \"cd /cygdrive/c/aPrograming/\"
 
   # LS color on, dir first, human readable sizes
-  alias ls=\"ls --color=always --group-directories-first -s -h\"
+  alias ls=\"ls --color=always --group-directories-first -s -h\"" >> config.fish
 
-  # Screen Cygwin hack
-  alias screen=\"rm -rf /tmp/uscreens/; screen\"
-
-  # Use experimental opengl
-  export LIBGL_USE_WGL=1
-  # export LIBGL_ALWAYS_INDIRECT=1
-
+  mkdir functions
+  cd functions
+  rm fish_user_key_bindings.fish
+  touch fish_user_key_bindings.fish
   # Make Ctrl-n into autocomplete
-  bind \\cn accept-autosuggestion" >> config.fish
+  echo "bind \\cn accept-autosuggestion" >> fish_user_key_bindings.fish
 else
   echo "Error: Fish not found or not installed"
 fi
