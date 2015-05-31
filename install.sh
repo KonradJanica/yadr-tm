@@ -16,6 +16,7 @@ alias cpwd=\"pwd | tr -d '\n' | pbcopy\"
 alias gointerview=\"cd /cygdrive/c/aPrograming/interview/\"
 alias gocg=\"cd /cygdrive/c/aPrograming/svn/a1194898/2015/s1/cg/assignment2/\"
 alias gocna=\"cd /cygdrive/c/aPrograming/svn/a1194898/2015/s1/cna/AlternatingBit\"
+alias gopro=\"cd /cygdrive/c/aPrograming/\"
 
 # LS color on
 alias ls=\"ls --color=always\"
@@ -25,7 +26,10 @@ alias screen=\"rm -rf /tmp/uscreens/; screen\"
 
 # Use experimental opengl
 export LIBGL_USE_WGL=1
-# export LIBGL_ALWAYS_INDIRECT=1" >> .bashrc
+# export LIBGL_ALWAYS_INDIRECT=1
+
+# Use fish as default shell
+fish" >> .bashrc
 
   echo "Patching screenrc ..."
   cd /etc
