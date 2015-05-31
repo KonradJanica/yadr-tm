@@ -18,8 +18,8 @@ alias gocg=\"cd /cygdrive/c/aPrograming/svn/a1194898/2015/s1/cg/assignment2/\"
 alias gocna=\"cd /cygdrive/c/aPrograming/svn/a1194898/2015/s1/cna/AlternatingBit\"
 alias gopro=\"cd /cygdrive/c/aPrograming/\"
 
-# LS color on
-alias ls=\"ls --color=always\"
+# LS color on, dir first, human readable sizes
+alias ls=\"ls --color=always --group-directories-first -s -h\"
 
 # Screen Cygwin hack
 alias screen=\"rm -rf /tmp/uscreens/; screen\"
