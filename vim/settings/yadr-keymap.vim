@@ -157,3 +157,36 @@ map ,hi :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 
 " ,hp = html preview
 map <silent> ,hp :!open -a Safari %<CR><CR>
+
+" ===========================
+" My vSplit commands
+" ===========================
+set splitbelow
+set splitright
+map w :call SplitMaxOrEqualToggle()<CR>
+
+let g:toggle_max_split = 0
+
+function! SplitMaxOrEqualToggle()
+  if g:toggle_max_split
+    call feedkeys("\<C-w>\=")
+    let g:toggle_max_split = 0
+  else
+    call feedkeys("\<C-w>\|")
+    let g:toggle_max_split = 1
+  endif
+endfunction
+
+" ===========================
+" Outside Paste
+" ===========================
+" Below line paste
+nmap p o<Esc>"+
+" Inline paste
+nmap ^[p "+p
+
+" ===========================
+" Ctrl A (increment remap)
+" ===========================
+nmap a <C-a>
+nmap x <C-x>
