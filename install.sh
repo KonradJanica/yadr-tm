@@ -218,6 +218,9 @@ DefaultIcon = X
   # Disable vim scrollback buffer
   altscreen on
 
+  # keep scrollback n lines
+  defscrollback 1000
+
   # bottom toolbar
   autodetach on 
   startup_message off 
