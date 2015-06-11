@@ -126,9 +126,9 @@ DefaultIcon = X
   }" >> multiwindow
 
   echo "Rebuilding startxwinrc ..."
-  cd /etc/X11/app-defaults/xinit
-  rm /etc/X11/app-defaults/xinit/startxwinrc
-  touch /etc/X11/app-defaults/xinit/startxwinrc
+  cd /etc/X11/xinit
+  rm /etc/X11/xinit/startxwinrc
+  touch /etc/X11/xinit/startxwinrc
   echo "#!/bin/sh
   # Copyright (C) 1999 - 2005, 2014 Red Hat, Inc. All rights reserved. This
   # copyrighted material is made available to anyone wishing to use, modify,
