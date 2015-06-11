@@ -1,6 +1,8 @@
 "c++11 clang compiler
 let g:syntastic_cpp_compiler = "g++"
 let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra -Wpedantic"
+" java script / nodejs
+let g:syntastic_javascript_checkers = ['jshint']
 "mark syntax errors with :signs
 let g:syntastic_enable_signs=1
 "automatically jump to the error when saving the file
