@@ -15,6 +15,10 @@ Thumbs.db
 # Folder config file
 Desktop.ini
 
+# Konrad's extras
+# cygwin exe stackdumps
+*.stackdump
+
 # Tags      taken from: https://github.com/github/gitignore/blob/master/Global/Tags.gitignore
 # ----------------------------------------------------------------------------------------------
 # Ignore tags created by etags, ctags, gtags (GNU global) and cscope
