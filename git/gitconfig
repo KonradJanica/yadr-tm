@@ -126,5 +126,5 @@
 [include]
   path = .gitconfig.user
 [user]
-	name = Tullie Murrell
+	name = Konrad Janica
 	email = konradjanica@gmail.com
