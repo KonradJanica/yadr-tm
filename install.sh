@@ -19,7 +19,7 @@ alias gocna=\"cd /cygdrive/c/aPrograming/svn/a1194898/2015/s1/cna/AlternatingBit
 alias gopro=\"cd /cygdrive/c/aPrograming/\"
 
 # Get rid of old Vi reference
-alias vi = \"vim\"
+alias vi=\"vim\"
 
 # LS color on, dir first, human readable sizes
 alias ls=\"ls --color=always --group-directories-first -s -h\"
